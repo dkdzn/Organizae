@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Configura o redirecionamento para Single Page Applications (SPA)
+# Isso evita o erro 404 ao atualizar a página ou acessar rotas diretamente
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
